@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Parking {
 
     private String id;
-    private String lincense;
+    private String license;
     private String state;
     private String model;
     private String color;
@@ -16,9 +16,9 @@ public class Parking {
     public Parking() {
     }
 
-    public Parking(String id, String lincense, String state, String model, String color) {
+    public Parking(String id, String license, String state, String model, String color) {
         this.id = id;
-        this.lincense = lincense;
+        this.license = license;
         this.state = state;
         this.model = model;
         this.color = color;
@@ -32,12 +32,12 @@ public class Parking {
         this.id = id;
     }
 
-    public String getLincense() {
-        return lincense;
+    public String getLicense() {
+        return license;
     }
 
-    public void setLincense(String lincense) {
-        this.lincense = lincense;
+    public void setLicense(String license) {
+        this.license = license;
     }
 
     public String getState() {

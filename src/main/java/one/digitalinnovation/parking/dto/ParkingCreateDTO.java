@@ -1,22 +1,18 @@
 package one.digitalinnovation.parking.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
-import java.time.LocalDateTime;
-
 public class ParkingCreateDTO {
 
-    private String lincense;
+    private String license;
     private String state;
     private String model;
     private String color;
 
-    public String getLincense() {
-        return lincense;
+    public String getLicense() {
+        return license;
     }
 
-    public void setLincense(String lincense) {
-        this.lincense = lincense;
+    public void setLicense(String license) {
+        this.license = license;
     }
 
     public String getState() {
