@@ -34,7 +34,7 @@ Você pode acessar API do projeto clicando [aqui](https://parking-francivaldo.he
 - ``Lógica de programação e POO``
 - ``Java e Spring Boot``
 - ``Banco de dados PostgreSQL``
-- ``GitHub e HerokuL``
+- ``GitHub e Heroku``
 
 
 ## Autor
