@@ -26,7 +26,10 @@ class ParkingControllerTest {
     @Test
     void whenFindAllThenCheckReult() {
         RestAssured.given()
+                .header("Authorization"," Basic dXNlcjpEaW9AMTIzNDU2")
                 .when()
+                //.auth()
+                //.basic("user","Dio@123456")
                 .get("/parking")
                 .then()
                 .statusCode(HttpStatus.OK.value());
@@ -39,8 +42,10 @@ class ParkingControllerTest {
         createDTO.setLicense("WRT-5555");
         createDTO.setModel("BRASILIA");
         createDTO.setState("SP");
+
         RestAssured.given()
                 .when()
+                .auth().basic("user", "Dio@123456")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .body(createDTO)
                 .post("/parking")
